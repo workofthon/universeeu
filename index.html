@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>buat arel</title>
+    <title>Paralax Effect</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,22 +25,20 @@
         <img src="stars.png" id="stars">
         <img src="meteorid.png" id="meteorid">
         <img src="rocket.png" id="rocket">
-        <h1 id="text">Message for AREL<br>from the universe!</h1>
+        <h1 id="text">Message for Kalea<br>from the universe!</h1>
         <button id="button">scroll down ↓</button>
     </div>
 
     <div class="description">
         <h2>HELLOOOO!</h2><br>
         <p>
-            Been knowing you for like a week, but honestly it’s been such a nice week! :D
-            You give off that calm yet passionate vibe, always studying, always chasing your goals. It’s inspiring, seriously. I can tell how much effort you put into everything, and I really admire that about you.
-            <br><br>
-            Arel, jangan pernah ragu sama kemampuan kamu ya. Kamu ambis, kamu rajin, dan kamu punya arah yang jelas jujur itu hal yang keren banget bahkan aku sendiri gapunya motivasi sebesar itu. Kadang kamu mungkin capek atau ragu, tapi percaya deh, semua usaha kamu sekarang bakal jadi alasan kenapa kamu bakal diterima di tempat yang kamu impikan nanti.
-            <br> <br>
-            I may not know you for long yet, but I’m already proud of how dedicated you are. Keep going, keep believing in yourself — kamu bisaaa banget! 
-            And if you ever feel tired or unmotivated, remember, there’s someone out here cheering for you. lol.
-            <br>
-            always remember KAMU BERHARGA, UR PRECIOUS, TU ES PRÉCIEUX, ERES PRECIOSO, DU BIST WERTVOLL, SEI PREZIOSO, あなたは貴重です、你是珍贵的, 당신은 소중합니다.
+          kalea, gua liat lu akhir akhir ini lagi sedih terus ya? jadi gua buatin sesuatu, ga seberapa sih.. 
+          but i'm kinda worried that smth bad happened to you and i can't do anything to make ur mood goes up, soo gua ngide aja buat bikinin ini wkwkwk.
+          <br> anyway, i know this little website won't magically fix everything. mungkin juga ga lucu, atau malah receh banget. but at least i hope it can make u smile for a few seconds.
+        and hey, you don't have to tell me what's wrong if you don't want to. gua cuma pengen lu tau aja kalo ada orang yang peduli sama keadaan lu. 
+        so, for the next few minutes, forget whatever's making u upset and enjoy this silly thing i made.
+        <br><br>take ur time, okay? no rush
+            
         </p>
 
         <div class="gif-container">
@@ -48,6 +46,194 @@
             <img src="cute1.gif" alt="cute gif" class="cute-gif">
         </div>
     </div>
+
+    <!-- ========== HAPPY SECTION ========== -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+  .happy-section {
+    background: linear-gradient(180deg, #c4c2c3 0%, #e8d5f0 40%, #1a0a2e 100%);
+    padding: 60px 40px 80px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .happy-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 80%, rgba(147,51,234,0.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .section-label {
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: #7c5c8a; margin-bottom: 8px; font-weight: 700;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif; font-style: italic;
+    font-size: 2.4em; color: #2a0a3e; margin-bottom: 48px; line-height: 1.2;
+  }
+  .cards-row {
+    display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;
+  }
+  .hcard {
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 24px; padding: 32px 28px; width: 220px;
+    backdrop-filter: blur(12px); transition: transform 0.3s ease;
+  }
+  .hcard:hover { transform: translateY(-6px); }
+  .card-icon { font-size: 2.4em; margin-bottom: 12px; display: block; }
+  .card-title {
+    font-size: 0.78em; letter-spacing: 2px; text-transform: uppercase;
+    color: #9b6bb5; margin-bottom: 12px; font-weight: 700;
+  }
+  .card-body { font-size: 0.95em; color: #3a1a4e; line-height: 1.6; min-height: 60px; font-weight: 600; }
+  .card-btn {
+    margin-top: 18px; padding: 10px 22px; border-radius: 50px; border: none;
+    font-family: 'Nunito', sans-serif; font-size: 0.85em; font-weight: 700;
+    cursor: pointer; transition: all 0.2s ease; letter-spacing: 0.5px;
+  }
+  .btn-purple { background: linear-gradient(135deg, #7c3aed, #a855f7); color: white; }
+  .btn-pink   { background: linear-gradient(135deg, #ec4899, #f472b6); color: white; }
+  .card-btn:hover { transform: scale(1.06); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+  .card-btn:active { transform: scale(0.97); }
+  .msg-out {
+    margin-top: 14px; padding: 12px 16px; background: rgba(255,255,255,0.25);
+    border-radius: 14px; font-size: 0.88em; color: #2a0a3e; font-weight: 600;
+    min-height: 44px; display: none; align-items: center; justify-content: center;
+    line-height: 1.5; border: 1px dashed rgba(147,51,234,0.3); transition: all 0.3s ease;
+  }
+  .stars-row { display: flex; justify-content: center; gap: 8px; margin: 16px 0 8px; }
+  .star-btn {
+    background: none; border: none; font-size: 1.8em; cursor: pointer;
+    transition: transform 0.15s ease; line-height: 1; padding: 2px;
+    filter: grayscale(0.7); opacity: 0.5;
+  }
+  .star-btn:hover, .star-btn.active { transform: scale(1.2); filter: none; opacity: 1; }
+  .star-feedback { font-size: 0.82em; color: #7c3aed; font-weight: 700; min-height: 20px; }
+  .cf {
+    position: fixed; width: 8px; height: 8px; border-radius: 2px; pointer-events: none; z-index: 9999;
+    animation: cffall 1.2s ease-out forwards;
+  }
+  @keyframes cffall {
+    0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(60vh) rotate(540deg); opacity: 0; }
+  }
+  .pop-anim { animation: popIn 0.4s cubic-bezier(0.175,0.885,0.32,1.275) forwards; }
+  @keyframes popIn {
+    0%   { transform: scale(0.85); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .divider-stars { margin: 40px auto 0; color: rgba(147,51,234,0.4); letter-spacing: 12px; font-size: 1.1em; }
+</style>
+
+<div class="happy-section">
+  <p class="section-label">professional mood repair program (lol)</p>
+  <h2 class="section-title">Pick your vibe ✨</h2>
+
+  <div class="cards-row">
+    <div class="hcard">
+      <span class="card-icon">🫙</span>
+      <p class="card-title">Happy Jar</p>
+      <p class="card-body">Klik buat dapet pesan dari semesta 💫</p>
+      <div class="msg-out" id="msg-out"></div>
+      <button class="card-btn btn-purple" onclick="getMsg()">Kocok toples ✨</button>
+    </div>
+
+    <div class="hcard">
+      <span class="card-icon">🎲</span>
+      <p class="card-title">Mini Challenge</p>
+      <p class="card-body">Tantangan kecil yang seru buat dicoba!</p>
+      <div class="msg-out" id="chal-out"></div>
+      <button class="card-btn btn-pink" onclick="getChallenge()">Aku mau coba! 🎯</button>
+    </div>
+
+    <div class="hcard">
+      <span class="card-icon">🌙</span>
+      <p class="card-title">Mood Check</p>
+      <p class="card-body">Mood kamu hari ini? Bintangin ya</p>
+      <div class="stars-row" id="stars-row">
+        <button class="star-btn" onclick="rateMood(1)">🌑</button>
+        <button class="star-btn" onclick="rateMood(2)">🌒</button>
+        <button class="star-btn" onclick="rateMood(3)">🌓</button>
+        <button class="star-btn" onclick="rateMood(4)">🌔</button>
+        <button class="star-btn" onclick="rateMood(5)">🌕</button>
+      </div>
+      <p class="star-feedback" id="mood-fb">tap a moon!</p>
+    </div>
+  </div>
+  <p class="divider-stars">· · · ✦ · · ·</p>
+</div>
+
+<script>
+const msgs = [
+  "Kalea, kamu udah ngelakuin hal yang luar biasa hari ini: masih di sini. 🌸",
+  "Hari yang berat itu bukan tanda kamu lemah. Itu tanda kamu manusia. 💜",
+  "Semesta lagi ngusulin bahwa kamu layak untuk istirahat sebentar. 🌙",
+  "Sekecil apapun langkahmu, kamu tetap bergerak maju. Bangga sama kamu! 🚀",
+  "Ada yang mau kasih tau kamu: senyummu bikin ruangan jadi lebih hangat. ☀️",
+  "Perasaan nggak baik-baik aja itu boleh. Kamu nggak harus pura-pura. 🌧️",
+  "Kalea yang kemarin udah berjuang keras. Kalea hari ini boleh lebih lembut. 🌷",
+  "Izin dari semesta: makan sesuatu yang enak hari ini. Kamu layak. 🍡",
+  "Yang kamu rasain itu valid. 100%. Nggak perlu divalidasi siapa-siapa. 💫",
+  "Kamu lebih kuat dari yang kamu kira, tapi kamu juga nggak harus kuat terus. 🤍",
+  "always remember KAMU BERHARGA, UR PRECIOUS, TU ES PRÉCIEUX, ERES PRECIOSO, DU BIST WERTVOLL, SEI PREZIOSO, あなたは貴重です、你是珍贵的, 당신은 소중합니다.",
+];
+const challenges = [
+  "Ambil napas dalam 4 detik, tahan 4 detik, hembus 4 detik. Ulangi 3x. 🌬️",
+  "Tulis 3 hal kecil yang kamu syukuri hari ini — sekecil apapun. 📝",
+  "Kirim pesan 'hai!' ke satu orang yang sudah lama nggak kamu sapa. 💌",
+  "Berdiri, stretch ke atas setinggi mungkin, tahan 10 detik. 🧘‍♀️",
+  "Gambar matahari sesuka hati kamu — nggak harus bagus! ☀️",
+  "Minum segelas air pelan-pelan sambil nggak mikirin apapun. 💧",
+  "Cari satu lagu yang biasanya bikin happy, putar sekarang. 🎵",
+  "Usap wajahmu pelan-pelan, bilang 'hai cantik' ke diri sendiri. 🪞",
+  "Tulis nama kamu di telapak tangan pakai jari. Itu tandamu ada di sini. ✍️",
+  "Cari sesuatu berwarna biru di sekitarmu. Fokus ke situ 10 detik. 💙",
+];
+const moodFb = [
+  "Hari yang berat ya... kamu pasti kuat. 🌑",
+  "Masih berjuang, tapi masih di sini. Itu udah cukup. 🌒",
+  "Halfway there! Gimana kalau minum air dulu? 🌓",
+  "Oh lumayan nih! Terus dijaga ya! 🌔",
+  "WAAAH mood penuh! Hari ini milik Kalea! 🌕✨",
+];
+const cfColors = ['#a855f7','#ec4899','#f59e0b','#10b981','#3b82f6','#ef4444'];
+
+function confetti(x, y) {
+  for (let i = 0; i < 28; i++) {
+    const cf = document.createElement('div');
+    cf.className = 'cf';
+    cf.style.cssText = `left:${x+(Math.random()-.5)*160}px;top:${y+(Math.random()-.5)*40}px;background:${cfColors[Math.floor(Math.random()*cfColors.length)]};animation-delay:${Math.random()*.3}s;animation-duration:${.9+Math.random()*.6}s;width:${5+Math.random()*7}px;height:${5+Math.random()*7}px;`;
+    document.body.appendChild(cf);
+    setTimeout(() => cf.remove(), 2000);
+  }
+}
+function popEl(el) {
+  el.classList.remove('pop-anim'); void el.offsetWidth; el.classList.add('pop-anim');
+}
+function getMsg() {
+  const out = document.getElementById('msg-out');
+  out.textContent = msgs[Math.floor(Math.random()*msgs.length)];
+  out.style.display = 'flex'; popEl(out);
+  const r = event.target.getBoundingClientRect();
+  confetti(r.left + r.width/2, r.top);
+}
+function getChallenge() {
+  const out = document.getElementById('chal-out');
+  out.textContent = challenges[Math.floor(Math.random()*challenges.length)];
+  out.style.display = 'flex'; popEl(out);
+  const r = event.target.getBoundingClientRect();
+  confetti(r.left + r.width/2, r.top);
+}
+function rateMood(n) {
+  document.querySelectorAll('.star-btn').forEach((b,i) => b.classList.toggle('active', i < n));
+  const fb = document.getElementById('mood-fb');
+  fb.textContent = moodFb[n-1]; popEl(fb);
+  if (n >= 4) { const r = document.getElementById('stars-row').getBoundingClientRect(); confetti(r.left+r.width/2, r.top); }
+}
+</script>
 
     <script src="script.js"></script>
 
@@ -83,4 +269,3 @@
     </style>
 </body>
 </html>
-
